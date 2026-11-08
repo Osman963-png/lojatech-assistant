@@ -345,10 +345,9 @@ def recomendar(id_cliente=None,categoria=None,preco_max=None, n = 3):
     ]
 
 RESPOSTAS = {
-    'saudacao':(
-        'saudacao':(
-    "Olá! Sou o assistente virtual da LojaTech. "
-    "Posso ajudar com pedidos, trocas e sugestões."
+    'saudacao': (
+        "Olá! Sou o assistente virtual da LojaTech. "
+        "Posso ajudar com pedidos, trocas e sugestões."
     ),
     'troca_devolucao':(
         "Você tem 7 dias para trocar (30 se tiver defeito)"
@@ -462,6 +461,13 @@ def recomendacoes(id_cliente):
 def pagina_inicial():
     return render_template('index.html')
 
-if __name__ == "__main__":
-    app.run(debug=True)
+import webbrowser
 
+if __name__ == "__main__":
+    print("\nProjeto LojaTech iniciado")
+    print("Abra o navegador em:")
+    print("http://127.0.0.1:5000\n")
+
+    webbrowser.open("http://127.0.0.1:5000")
+
+    app.run(debug=False)
