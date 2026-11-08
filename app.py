@@ -346,8 +346,9 @@ def recomendar(id_cliente=None,categoria=None,preco_max=None, n = 3):
 
 RESPOSTAS = {
     'saudacao':(
-        "Olá! Sou o assistente virtual da Lojatech"
-        "Posso ajudar com pedidos, trocas e sugestões"
+        'saudacao':(
+    "Olá! Sou o assistente virtual da LojaTech. "
+    "Posso ajudar com pedidos, trocas e sugestões."
     ),
     'troca_devolucao':(
         "Você tem 7 dias para trocar (30 se tiver defeito)"
@@ -463,3 +464,4 @@ def pagina_inicial():
 
 if __name__ == "__main__":
     app.run(debug=True)
+

@@ -1,0 +1,50 @@
+type: collection.insomnia.rest/5.0
+schema_version: "5.1"
+name: My first collection
+meta:
+  id: wrk_c8efa04c491f4c00a2413e3459640d14
+  created: 1794153741166
+  modified: 1794153741166
+  description: ""
+collection:
+  - url: http://127.0.0.1:5000/api/chat
+    name: New Request
+    meta:
+      id: req_06cfad711b9b4ebfbe40337610076d4c
+      created: 1794153741232
+      modified: 1794154014614
+      isPrivate: false
+      description: ""
+      sortKey: -1794153741232
+    method: POST
+    body:
+      mimeType: application/json
+      text: |-
+        {
+          "mensagem": "status do pedido 1002",
+          "id_cliente": "C03"
+        }
+    headers:
+      - name: Content-Type
+        value: application/json
+    settings:
+      renderRequestBody: true
+      encodeUrl: true
+      followRedirects: global
+      cookies:
+        send: true
+        store: true
+      rebuildPath: true
+cookieJar:
+  name: Default Jar
+  meta:
+    id: jar_69ec3c74360fd25385a5b31cbd39c08cacc93b7f
+    created: 1794153741182
+    modified: 1794153741182
+environments:
+  name: Base Environment
+  meta:
+    id: env_69ec3c74360fd25385a5b31cbd39c08cacc93b7f
+    created: 1794153741171
+    modified: 1794153741171
+    isPrivate: false

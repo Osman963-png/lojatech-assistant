@@ -5,8 +5,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Assistente Loja Tech</title>
-    <link rel="icon" href="image/robot.png" type="image/x-icon">
-    <link rel="stylesheet" href="css/style.css"> 
+    <link rel="icon" href="{{ url_for('static', filename='image/robot.png') }}" type="image/x-icon">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}"> 
     <style>   /* comentario css */
    body {
        background: #f1eee4;
@@ -89,7 +89,7 @@
             <button type="submit">Enviar</button>
         </form>
     </div>
-    <script src="js/script.js"></script>
+    <script src="{{ url_for('static', filename='js/script.js') }}"></script>
     <script>
         // comentario
 const caixa = document.getElementById('mensagens');
